@@ -13,6 +13,16 @@ window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
   imageParalaxEl.style.top = `${scroll * 0.5}px`;
 });
+// scroll top
+const button = document.querySelector(".scroolUp");
+
+button.addEventListener("click", () => {
+  window.scroll(0, 0);
+});
+
+function scrollTo() {
+  console.log("554");
+}
 
 // - / - //
 
@@ -43,8 +53,8 @@ const testimonialSwiper = new Swiper(".testimonial__slide", {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.control__left',
-    prevEl: '.control__right',
+    nextEl: ".control__right",
+    prevEl: ".control__left",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -68,5 +78,18 @@ const partnersSlide = new Swiper(".partners__slide", {
       slidesPerView: 6,
       spaceBetween: 40,
     },
+  },
+});
+
+const aboutSlide = new Swiper(".about__slide", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".about__slide__pagination",
+    clickable: true,
   },
 });
