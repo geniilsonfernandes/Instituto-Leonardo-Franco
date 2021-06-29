@@ -366,6 +366,16 @@
     padding: 16px 5%;
     border-radius: 8px;
 }
+
+.projeto__card:nth-child(1){
+    background: var(--color-background-light);
+}
+.projeto__card:nth-child(2){
+    background: #D3E0FF;
+}
+.projeto__card:nth-child(3){
+    background: #ECFAEC;
+}
 .projeto__card span {
     font-family: Oswald;
     font-style: normal;
