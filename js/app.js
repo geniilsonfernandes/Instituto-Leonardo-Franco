@@ -6,11 +6,67 @@ mobileMenuBtnEl.addEventListener("click", () => {
   collapseMenu.classList.toggle("menu__open");
 });
 
-//paralax
+//paralax cover
 const imageParalaxEl = document.querySelector(".cover__photo");
 
 window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
   imageParalaxEl.style.top = `${scroll * 0.5}px`;
 });
-const slides = document.querySelectorAll(".ods__card");
+
+// - / - //
+
+const swiper = new Swiper(".ods__slide", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+const testimonialSwiper = new Swiper(".testimonial__slide", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.control__left',
+    prevEl: '.control__right',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const partnersSlide = new Swiper(".partners__slide", {
+  slidesPerView: 2,
+  spaceBetween: 16,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 40,
+    },
+  },
+});
