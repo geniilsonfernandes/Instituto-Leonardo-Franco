@@ -1,0 +1,147 @@
+.about__cover {
+    height: 368px;
+    width: 100%;
+}
+.about__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__section {
+    background: var(--color-green);
+    padding: 56px 0;
+}
+.about__title h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.about__history {
+    padding: 48px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.418);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
+.about__history p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #e8f4f2;
+    margin-bottom: 24px;
+}
+
+.about__card__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding-top: 48px;
+}
+.about__card {
+    grid-column: span 4;
+    padding: 0 48px;
+}
+
+.about__card h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.about__card p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #e8f4f2;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.about__card:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.418);
+    border-right: 1px solid rgba(255, 255, 255, 0.418);
+}
+
+.equipe__title h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--color-background);
+    text-align: center;
+    margin-bottom: 24px;
+}
+.about__equipe {
+    background: var(--color-background-light);
+    padding: 72px 0;
+}
+.equipe__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding: 24px 0;
+}
+
+.membro {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+}
+.photo__membro {
+    height: 249px;
+
+    background: #28b097;
+    border-radius: 8px;
+}
+.membro__nome {
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: -16px;
+}
+.membro__nome h2 {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-text-color);
+}
+.membro__nome span {
+    color: var(--color-green);
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+}
+.contact{
+   padding-top: 48px;
+}
+.contact h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--color-background);
+    text-align: center;
+    margin-bottom: 24px;
+}
+.contact__link{
+    display: flex;
+    justify-content: center;
+}
+.contact__link a{
+    display: inline-flex;
+
+    background: var(--color-green);
+    height: 42px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #fff;
+    border-radius: 21px;
+
+    transition: all 0.3s ease-in;
+}
+.contact__link span{
+    margin-left: 8px;
+}

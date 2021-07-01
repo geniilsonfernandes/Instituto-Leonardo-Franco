@@ -20,15 +20,13 @@ button.addEventListener("click", () => {
   window.scroll(0, 0);
 });
 
-function scrollTo() {
-  console.log("554");
-}
+console.log(window.location);
 
 // - / - //
 
-const swiper = new Swiper(".ods__slide", {
+const odsSlide = new Swiper(".ods__slide", {
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 8,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -36,15 +34,15 @@ const swiper = new Swiper(".ods__slide", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 16,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 16,
     },
   },
 });
-const testimonialSwiper = new Swiper(".testimonial__slide", {
+const testimonialSlide= new Swiper(".testimonial__slide", {
   slidesPerView: 1,
   spaceBetween: 16,
   autoplay: {

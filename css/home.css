@@ -1,4 +1,3 @@
-
 /* cover */
 .cover {
     position: relative;
@@ -34,12 +33,13 @@
 }
 
 .cover__title h1 {
-    padding: 8px 16px 10px 16px;
-    background: var(--color-green);
+    padding: 16px 24px;
+    background: linear-gradient(92.26deg, #faaa4c -16.72%, #ff971d 105.85%);
+    border-radius: 8px;
     text-align: center;
-    font-size: 38px;
-    font-family: Oswald;
-    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
     color: #fff;
 }
 
@@ -51,7 +51,9 @@
 }
 .cover__subtitle p {
     padding: 8px 16px;
-    background: var(--color-orage);
+    border-radius: 8px;
+
+    background: var(--color-green);
     font-weight: 400;
     font-size: 18px;
     color: #fff;
@@ -60,15 +62,15 @@
     margin-top: 48px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .cover__content {
         justify-content: flex-end;
         align-items: center;
     }
-    .cover{
+    .cover {
         padding-bottom: 38px;
     }
-    .cover__title h1{
+    .cover__title h1 {
         max-width: 75%;
         margin: 0 auto;
     }
@@ -77,8 +79,8 @@
 /* section__ods */
 .section__about {
     background: var(--color-background-light);
-    padding-top: 72px;
-    padding-bottom: 102px;
+    padding-top: 80px;
+    padding-bottom: 124px;
 }
 
 .about__left {
@@ -87,18 +89,20 @@
     align-items: center;
     display: flex;
 }
-
 .about__right {
     grid-column-start: 7;
     grid-column-end: 13;
     align-items: center;
     display: flex;
 }
-
+.about__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-green);
+}
 .about__content h2 {
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
     font-size: 45px;
     color: var(--color-orage);
 }
@@ -123,7 +127,6 @@
     width: 100%;
     height: 225px;
     border-radius: 8px;
-
     position: relative;
 }
 
@@ -145,15 +148,17 @@
     bottom: -38px;
 }
 
-.about__slide__photo{
+.about__slide__photo {
     height: 225px;
 }
 .about__slide__pagination .swiper-pagination-bullet {
-    background: var(--color-green);
+    background: transparent;
+    border: 1px solid var(--color-background);
     opacity: 1;
     width: 15px;
     border-radius: 15px;
     margin: 0 4px;
+    transition: 0.3s ease-in-out;
 }
 
 .about__slide__pagination .swiper-pagination-bullet-active {
@@ -184,17 +189,24 @@
     }
 }
 
-
-
 /* section__ods */
 .section__ods {
-    margin-top: -40px;
+    margin-top: -64px;
     padding-bottom: 72px;
 }
-.slide__ods__card__grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 32px;
+
+.ods__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-green);
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ods__title img {
+    margin-left: 8px;
 }
 
 .ods__card {
@@ -232,11 +244,11 @@
 }
 .ods__card__front h2 {
     margin-top: 24px;
-    font-family: Oswald;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 24px;
     text-align: center;
-    text-transform: uppercase;
+    line-height: 32px;
     color: #ffffff;
 }
 .ods__card__back {
@@ -284,6 +296,9 @@
         display: flex;
         gap: 32px;
     }
+    .ods__slide {
+        max-width: 95%;
+    }
     .ods__card {
         flex-shrink: 0;
         width: 90%;
@@ -321,6 +336,10 @@
 }
 
 /* projetos */
+.projetos {
+    background: var(--color-background-light);
+    padding: 78px 0;
+}
 .section__projetos {
     display: flex;
     align-items: center;
@@ -335,9 +354,8 @@
 }
 
 .projetos__content h2 {
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
     font-size: 45px;
     color: var(--color-orage);
 }
@@ -359,29 +377,19 @@
     gap: 16px;
 }
 .projeto__card {
-    background: var(--color-background-light);
+    border: 1px solid var(--color-background);
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 16px 5%;
     border-radius: 8px;
 }
-
-.projeto__card:nth-child(1){
-    background: var(--color-background-light);
-}
-.projeto__card:nth-child(2){
-    background: #D3E0FF;
-}
-.projeto__card:nth-child(3){
-    background: #ECFAEC;
-}
 .projeto__card span {
-    font-family: Oswald;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    color: #28b097;
+    color: var(--color-background);
 }
 
 .projeto__card p {
@@ -390,7 +398,7 @@
     margin-top: 16px;
     line-height: 22px;
     text-align: center;
-    color: var(--color-text-color);
+    color: var(--color-green);
     max-width: 50%;
 }
 .projetos__photos {
@@ -418,7 +426,10 @@
 .projeto__photo:hover img {
     transform: scale(1.1);
 }
-
+.projetos__cta {
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width: 768px) {
     .section__projetos {
         flex-flow: wrap;
@@ -444,13 +455,12 @@
 /* testimonial */
 
 .section__testimonial {
-    padding: 48px 0;
+    padding: 78px 0;
 }
 
 .testimonial__title {
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
     font-size: 45px;
     color: var(--color-orage);
     text-align: center;
@@ -537,9 +547,8 @@
 /* partners */
 
 .partners__title {
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
     font-size: 45px;
     color: var(--color-orage);
     text-align: center;
@@ -549,17 +558,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 0;
+    padding: 48px 0 0 0;
     position: relative;
 }
 
-/* partners */
-
 .section__partners {
     background: var(--color-background-light);
-    padding: 48px 0;
+    padding: 78px 0;
 }
 .partners {
     height: 68px;
-    background: var(--color-green);
+    background: #fff;
+    border-radius: 8px;
 }
+
+/* partners */
