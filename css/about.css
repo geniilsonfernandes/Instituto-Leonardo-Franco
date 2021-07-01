@@ -63,6 +63,23 @@
     border-right: 1px solid rgba(255, 255, 255, 0.418);
 }
 
+
+@media screen and (max-width: 768px) {
+    .about__card__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+    .about__card:nth-child(2) {
+        border-left: none;
+        border-right: none;
+        padding: 48px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.418);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+    }
+}
+
+
+
 .equipe__title h1 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -112,6 +129,14 @@
     display: block;
     margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+    .equipe__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+}
+
 .contact{
    padding-top: 48px;
 }
