@@ -1,5 +1,6 @@
 @import "./footer.css";
 @import "./home.css";
+@import "./about.css";
 
 :root {
     --color-background: #faaa4c;
@@ -7,7 +8,7 @@
     --color-orage: #faaa4c;
     --color-green: #28b097;
     --color-green-hover: #1f947e;
-    --color-text-color: #646464;
+    --color-text-color: #5f5f5c;
 }
 
 * {
@@ -22,7 +23,28 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* comps */ /* donate__button */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* comps */
+/* simple__cta */
+.simple__cta {
+    text-decoration: none;
+    color: var(--color-background);
+    border: 1px solid var(--color-background);
+    border-radius: 21px;
+    height: 42px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.simple__cta:hover {
+    background: var(--color-background);
+    color: #fff;
+}
+
+/* donate__button */
 .donate__button {
     display: inline-flex;
 
@@ -34,7 +56,7 @@ body {
 
     text-decoration: none;
     color: #fff;
-    border-radius: 21px;
+    border-radius: 8px;
 
     transition: all 0.3s ease-in;
 }
@@ -59,7 +81,6 @@ body {
     text-decoration: none;
     color: #fff;
     border-radius: 21px;
-
     transition: all 0.3s ease-in;
 }
 
@@ -238,5 +259,3 @@ body {
 }
 
 /* navigation */
-
-/******** Home *********/
