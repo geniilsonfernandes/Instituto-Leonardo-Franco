@@ -21,9 +21,8 @@
     margin-bottom: 48px;
 }
 .about__history {
-    padding: 48px 0;
+    padding-top: 48px;
     border-top: 1px solid rgba(255, 255, 255, 0.418);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
 }
 .about__history p {
     font-weight: 400;
@@ -62,7 +61,48 @@
     border-left: 1px solid rgba(255, 255, 255, 0.418);
     border-right: 1px solid rgba(255, 255, 255, 0.418);
 }
+.readmore {
+    height: 300px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.redmore-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(40, 176, 151, 0) 50.21%, #28b097 100%);
+}
+.button__read {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
 
+.about__history__photo {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}
+.history__photo{
+    position: relative;
+}
+.history__photo img {
+    height: 100%;
+}
+.history__photo__legend {
+    background: var(--color-background);
+    padding: 12px 10px;
+    border-radius: 4px;
+    position: absolute;
+    right: -16px;
+    bottom: 12px;
+    color: #fff;
+}
 
 @media screen and (max-width: 768px) {
     .about__card__grid {
@@ -77,8 +117,6 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.418);
     }
 }
-
-
 
 .equipe__title h1 {
     font-family: "Ubuntu", sans-serif;
@@ -137,8 +175,8 @@
     }
 }
 
-.contact{
-   padding-top: 48px;
+.contact {
+    padding-top: 48px;
 }
 .contact h2 {
     font-family: "Ubuntu", sans-serif;
@@ -146,13 +184,13 @@
     font-size: 38px;
     color: var(--color-background);
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
-.contact__link{
+.contact__link {
     display: flex;
     justify-content: center;
 }
-.contact__link a{
+.contact__link a {
     display: inline-flex;
 
     background: var(--color-green);
@@ -167,6 +205,6 @@
 
     transition: all 0.3s ease-in;
 }
-.contact__link span{
+.contact__link span {
     margin-left: 8px;
 }

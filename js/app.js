@@ -1,29 +1,21 @@
-// menu mobile
-const mobileMenuBtnEl = document.getElementById("mobileMenu");
-const collapseMenu = document.getElementById("collapseMenu");
+import MenuMobile from "./modules/menuMobile.js";
+import ReadMore from "./modules/ReadMore.js";
 
-mobileMenuBtnEl.addEventListener("click", () => {
-  collapseMenu.classList.toggle("menu__open");
-});
+const mobileMenu = new MenuMobile("mobileMenu", "collapseMenu", "menu__open");
+mobileMenu.init();
 
-//paralax cover
-const imageParalaxEl = document.querySelector(".cover__photo");
+const readme = new ReadMore('[data-readMore="wrapper"]', '[data-readMore="buttom"]');
+readme.init();
 
-window.addEventListener("scroll", () => {
-  const scroll = window.scrollY;
-  imageParalaxEl.style.top = `${scroll * 0.5}px`;
-});
+
+
 // scroll top
 const button = document.querySelector(".scroolUp");
-
 button.addEventListener("click", () => {
   window.scroll(0, 0);
 });
 
-console.log(window.location);
-
-// - / - //
-
+//sliodes home
 const odsSlide = new Swiper(".ods__slide", {
   slidesPerView: 1,
   spaceBetween: 8,
@@ -42,7 +34,8 @@ const odsSlide = new Swiper(".ods__slide", {
     },
   },
 });
-const testimonialSlide= new Swiper(".testimonial__slide", {
+
+const testimonialSlide = new Swiper(".testimonial__slide", {
   slidesPerView: 1,
   spaceBetween: 16,
   autoplay: {

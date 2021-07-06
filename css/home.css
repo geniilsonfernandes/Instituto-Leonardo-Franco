@@ -212,7 +212,7 @@
 .ods__card {
     grid-column: span 4;
     border-radius: 8px;
-    height: 248px;
+    height: 328px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -381,14 +381,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 16px 5%;
+    padding: 32px 5%;
     border-radius: 8px;
 }
 .projeto__card span {
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     color: var(--color-background);
 }
 
@@ -399,7 +399,6 @@
     line-height: 22px;
     text-align: center;
     color: var(--color-green);
-    max-width: 50%;
 }
 .projetos__photos {
     display: grid;

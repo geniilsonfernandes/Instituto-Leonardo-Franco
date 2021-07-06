@@ -47,12 +47,13 @@
 .footer__content_item ul {
     list-style: none;
     margin-top: 8px;
+    margin-bottom: 16PX;
 }
 
 .footer__content_item ul li a {
     text-decoration: none;
     color: #ffead1;
-    padding: 8px 0;
+    padding: 4px 0;
     display: block;
     margin-bottom: 2px;
     transition: 0.3s ease-in;
