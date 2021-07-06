@@ -47,7 +47,7 @@
 .footer__content_item ul {
     list-style: none;
     margin-top: 8px;
-    margin-bottom: 16PX;
+    margin-bottom: 16px;
 }
 
 .footer__content_item ul li a {
@@ -111,8 +111,20 @@
     .footer__contact,
     .footer__about {
         grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .footer__about p {
         max-width: 90%;
+    }
+    .footer__content_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content_item ul li a {
+        text-align: center;
     }
 }

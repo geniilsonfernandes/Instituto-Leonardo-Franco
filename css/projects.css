@@ -1,0 +1,118 @@
+.section__head_projects {
+    padding: 80px 0;
+    background: var(--color-green);
+
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-size: 38px;
+    text-align: center;
+    color: #ffffff;
+}
+.projects__section {
+    background: var(--color-background-light);
+    padding: 24px 0;
+}
+.project__card {
+    display: flex;
+    padding: 72px 0;
+    position: relative;
+}
+
+.project__photo {
+    flex: 0 0 50%;
+}
+.project__photo img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+.project__text {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project__text h2 {
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-size: 38px;
+    color: var(--color-background);
+    margin-bottom: 24px;
+    max-width: 80%;
+}
+
+.text__highlight {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--color-green);
+    max-width: 80%;
+}
+
+.text__block {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: var(--color-text-color);
+    margin-top: 16px;
+    max-width: 80%;
+}
+.text__block p {
+    margin-bottom: 8px;
+}
+
+.project__card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.project__card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-background);
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .project__card {
+        flex-flow: wrap;
+    }
+
+    .project__photo,
+    .project__text {
+        flex: 0 0 100%;
+    }
+
+    .project__photo img {
+        max-width: 100%;
+    }
+    .project__text {
+        margin-top: 48px;
+    }
+    .text__highlight,
+    .text__block {
+        max-width: 100%;
+    }
+}
+
+.project__cta {
+    padding: 48px 0;
+}
+.project__cta h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--color-background);
+    text-align: center;
+}
+.project__cta__links {
+    margin-top: 28px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
