@@ -88,7 +88,7 @@
     justify-content: center;
     padding: 16px 0;
 }
-.history__photo{
+.history__photo {
     position: relative;
 }
 .history__photo img {
@@ -136,23 +136,27 @@
     gap: 32px;
     padding: 24px 0;
 }
-
 .membro {
     grid-column: span 3;
     display: flex;
     flex-direction: column;
+    width: 280px;
 }
 .photo__membro {
-    height: 249px;
-
-    background: #28b097;
-    border-radius: 8px;
+    width: 100%;
+    height: 348px;
+}
+.photo__membro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px 4px 0 0;
 }
 .membro__nome {
     padding: 16px;
     background: #ffffff;
-    border-radius: 8px;
-    margin-top: -16px;
+    border-radius: 0 0 4px 4px;
 }
 .membro__nome h2 {
     font-family: Ubuntu;

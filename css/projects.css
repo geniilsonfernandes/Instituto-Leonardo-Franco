@@ -21,10 +21,25 @@
 .project__photo {
     flex: 0 0 50%;
 }
+.photo {
+    position: relative;
+}
 .project__photo img {
     max-width: 90%;
     border-radius: 8px;
 }
+.project__photo__legend {
+    position: absolute;
+    padding: 16px;
+    bottom: 0px;
+    left: 10%;
+    border-radius: 8px;
+    background: var(--color-green);
+    color: #fff;
+    width: 100%;
+    max-width: 380px;
+}
+
 .project__text {
     flex: 0 0 50%;
     display: flex;
