@@ -72,7 +72,7 @@
     background: #fff;
     padding: 72px 0;
 }
-.projects__section h2 {
+.projects__section > h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 38px;
