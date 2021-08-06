@@ -2,6 +2,7 @@
 @import "./home.css";
 @import "./about.css";
 @import "./projects.css";
+@import "./donate.css";
 
 :root {
     --color-background: #faaa4c;
