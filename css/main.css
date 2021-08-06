@@ -232,8 +232,6 @@ font-family: 'Ubuntu', sans-serif; */
     cursor: pointer;
 }
 
-
-
 /* menu responsive */
 @media screen and (max-width: 768px) {
     .menu__collapse {
@@ -278,7 +276,6 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 /* navigation */
-
 
 .interna__cover {
     height: 368px;

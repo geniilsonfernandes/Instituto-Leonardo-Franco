@@ -197,3 +197,16 @@
     gap: 16px;
     justify-content: center;
 }
+
+
+
+.project__list{
+    margin-top: 24px;
+}
+.project__list ul {
+    list-style: none;
+}
+.project__list ul li{
+    margin-bottom: 16px;
+    color: var(--color-green);
+}
