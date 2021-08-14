@@ -79,11 +79,13 @@
     justify-content: center;
     padding: 16px 0;
 }
+
+
 .history__photo {
     position: relative;
 }
 .history__photo img {
-    height: 100%;
+    width: 100%;
 }
 .history__photo__legend {
     background: var(--color-background);
@@ -106,6 +108,9 @@
         padding: 48px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.418);
         border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+    }
+    .about__history__photo{
+        flex-direction: column;
     }
 }
 

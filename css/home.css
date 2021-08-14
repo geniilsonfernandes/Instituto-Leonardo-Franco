@@ -566,9 +566,14 @@
     padding: 78px 0;
 }
 .partners {
-    height: 68px;
-    background: #fff;
-    border-radius: 8px;
-}
 
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners img{
+    margin: 16px;
+    width: 100%;
+}
 /* partners */
