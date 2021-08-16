@@ -281,3 +281,47 @@
     max-width: 450px;
     margin-top: 16px;
 }
+.imposto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate__imposto h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--color-orage);
+    text-align: center;
+}
+.donate__imposto h1 span {
+    font-weight: 300;
+}
+.donate__imposto__text_primary {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #28b097;
+    margin: 16px 0;
+}
+.donate__imposto__text_secudary {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+    color: #75756e;
+}
+.imposto {
+    margin: 0 auto;
+    padding-bottom: 48px;
+    max-width: 700px;
+}
+.parceria__cta {
+    margin-top: 48px;
+    max-width: 202px;
+}
