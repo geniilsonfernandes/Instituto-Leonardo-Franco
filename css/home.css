@@ -211,51 +211,42 @@
 .ods__title img {
     margin-left: 8px;
 }
-
+.ods__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding: 16px 0;
+}
 .ods__card {
-    grid-column: span 4;
+    grid-column: span 6;
     border-radius: 8px;
-    height: 328px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 48px;
+
+    padding: 48px 24px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.ods__number {
-    font-weight: 600;
-    font-family: Oswald;
-    font-size: 200px;
-    position: absolute;
-    left: 50%;
-    top: 48%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.1;
-    z-index: 1;
-    pointer-events: none;
-    user-select: none;
-}
-.ods__card__front {
+
+.ods__card__title {
     display: flex;
-    flex-direction: column;
     align-items: center;
     z-index: 2;
     position: relative;
     animation: intoUp linear 0.2s forwards;
+    gap: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.164);
+    margin-bottom: 16px;
 }
-.ods__card__front h2 {
-    margin-top: 24px;
+.ods__card__title h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 24px;
-    text-align: center;
     line-height: 32px;
     color: #ffffff;
+    max-width: 250px;
 }
 .ods__card__back {
-    display: none;
     z-index: 2;
     position: relative;
 }
@@ -263,19 +254,9 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 27px;
-    text-align: center;
+
     color: #ffffff;
-}
-.ods__card:hover .ods__card__front {
-    display: none;
-}
-.ods__card:hover {
-    transform: translate3d(0, -5px, 0);
-    box-shadow: 1px 7px 10px 4px #f8ecdf;
-}
-.ods__card:hover .ods__card__back {
-    display: block;
-    animation: intoUp linear 0.2s forwards;
+    opacity: 0.7;
 }
 
 @keyframes intoUp {
@@ -287,43 +268,13 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    .slide__ods__card__grid {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 32px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .slide__ods__card__grid {
-        display: flex;
+    .ods__grid {
+        grid-template-columns: repeat(6, 1fr);
         gap: 32px;
     }
-    .ods__slide {
-        max-width: 95%;
-    }
-    .ods__card {
-        flex-shrink: 0;
-        width: 90%;
-        flex-direction: column;
-        padding: 56px 48px;
-        height: auto;
-        pointer-events: none;
-    }
-
-    .ods__card__back {
-        margin-top: 24px;
-        display: block;
-    }
-}
-
-.overflow {
-    overflow: hidden;
-}
-
-.ods__slide.swiper {
-    overflow: inherit;
-    padding: 16px 0;
 }
 
 .section__photo {

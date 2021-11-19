@@ -17,25 +17,6 @@ button.addEventListener("click", () => {
   window.scroll(0, 0);
 });
 
-//sliodes home
-const odsSlide = new Swiper(".ods__slide", {
-  slidesPerView: 1,
-  spaceBetween: 8,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 16,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
-  },
-});
 
 const testimonialSlide = new Swiper(".testimonial__slide", {
   slidesPerView: 1,
