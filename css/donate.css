@@ -1,7 +1,7 @@
 .cover__interna__donate {
     height: 428px;
     width: 100%;
-
+    
     position: relative;
 }
 .cover__interna__donate img {
@@ -123,6 +123,10 @@
     font-size: 16px;
     color: #75756e;
     margin-bottom: 8px;
+}
+.options__a ul li span {
+    font-weight: 700;
+    color: #646462;
 }
 
 @media screen and (max-width: 768px) {

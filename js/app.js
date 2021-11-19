@@ -1,13 +1,14 @@
 import MenuMobile from "./modules/menuMobile.js";
 import ReadMore from "./modules/ReadMore.js";
-
+import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 const mobileMenu = new MenuMobile("mobileMenu", "collapseMenu", "menu__open");
 mobileMenu.init();
 
-const readme = new ReadMore('[data-readMore="wrapper"]', '[data-readMore="buttom"]');
+const readme = new ReadMore(
+  '[data-readMore="wrapper"]',
+  '[data-readMore="buttom"]'
+);
 readme.init();
-
-
 
 // scroll top
 const button = document.querySelector(".scroolUp");
@@ -75,12 +76,9 @@ const partnersSlide = new Swiper(".partners__slide", {
 const aboutSlide = new Swiper(".about__slide", {
   slidesPerView: 1,
   spaceBetween: 16,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
   pagination: {
     el: ".about__slide__pagination",
     clickable: true,
   },
 });
+

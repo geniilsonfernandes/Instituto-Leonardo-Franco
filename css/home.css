@@ -144,8 +144,11 @@
     position: absolute;
     z-index: 99;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: -38px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50px);
+    padding-top: 30px;
+    margin-top: -50px;
 }
 
 .about__slide__photo {
@@ -318,7 +321,7 @@
     overflow: hidden;
 }
 
-.ods__slide.swiper-container {
+.ods__slide.swiper {
     overflow: inherit;
     padding: 16px 0;
 }
@@ -566,13 +569,12 @@
     padding: 78px 0;
 }
 .partners {
-
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.partners img{
+.partners img {
     margin: 16px;
     width: 100%;
 }

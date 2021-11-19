@@ -1,0 +1,150 @@
+.cover__interna__trans {
+    padding: 100px 0;
+    min-height: 300px;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover__interna__trans img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.cover__interna__trans::after {
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #28b097 19.86%, rgba(40, 176, 151, 0.54) 100%);
+}
+
+.cover__content__trans {
+    text-align: center;
+}
+.cover__content__trans h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    color: #fff;
+}
+.cover__content__trans h1 span {
+    font-weight: 500;
+}
+
+.s__transparencia {
+    background-color: #fbf7ee;
+}
+
+.head {
+    padding: 48px 0;
+}
+.head h1 {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: #faaa4c;
+}
+@media screen and (max-width: 768px) {
+    .head {
+        padding: 48px 0;
+    }
+    .head h1 {
+        font-family: Ubuntu;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 42px;
+        color: #faaa4c;
+    }
+}
+
+.card__link {
+    padding: 24px 32px;
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 400px;
+}
+.card__title {
+    display: flex;
+    align-items: center;
+}
+
+.card__link .icon {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__link h2 {
+    font-size: 18px;
+    color: #2f5349;
+    max-width: 200px;
+    display: inline-flex;
+}
+.link__button {
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #faaa4c;
+    background-color: transparent;
+
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: #faaa4c;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    transition: all ease-in-out 200ms;
+}
+.link__button:hover {
+    background-color: #faaa4c;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .card__link {
+        padding: 16px 16px;
+    }
+    .card__link .icon {
+        margin-right: 8px;
+    }
+    .card__link h2 {
+        font-size: 14px;
+    }
+    .link__button {
+        font-size: 12px;
+    }
+}
+
+.anual__info {
+    padding: 48px 0;
+}
+.date__head {
+    padding: 16px 0;
+    border-bottom: 1px solid #2f5349;
+}
+.date__head h1 {
+    font-size: 18px;
+    color: #2f5349;
+}
+.anual__grid {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

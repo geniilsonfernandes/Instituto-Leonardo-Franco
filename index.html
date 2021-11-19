@@ -16,6 +16,7 @@
 		rel="stylesheet">
 
 	<title>Instituto Leonardo Franco</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -36,13 +37,14 @@
 							<ul>
 								<li><a href="./" class="menu__link link__active">Home</a></li>
 								<li><a href="./sobre.html" class="menu__link">Sobre</a></li>
-								<li><a href="#" class="menu__link">Transparência</a></li>
+								<li><a href="./transparencia.html" class="menu__link">Transparência</a></li>
 								<li><a href="#" class="menu__link">Parceiros</a></li>
 								<li><a href="./projetos.html" class="menu__link">Projetos</a></li>
 							</ul>
 						</div>
 						<div class="menu__donate__button">
-							<a href="./doacao.html" class="donate__button"><img src="./svg/heart__icon.svg" alt="heart__icon">
+							<a href="./doacao.html" class="donate__button"><img src="./svg/heart__icon.svg"
+									alt="heart__icon">
 								<span>Faça uma Doação</span> </a>
 						</div>
 					</div>
@@ -91,7 +93,7 @@
 				</div>
 				<div class="about__right">
 					<div class="about__photo">
-						<div class="swiper-container about__slide">
+						<div class="about__slide swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide about__slide__photo">
 									<img src="./images/slide__about__home/about_leonardo_franco_01.png"
@@ -117,6 +119,10 @@
 									<img src="./images/slide__about__home/about_leonardo_franco_06.png"
 										alt="impacto social" title="impacto social">
 								</div>
+								<div class="swiper-slide about__slide__photo">
+									<img src="./images/slide__about__home/about_leonardo_franco_07.png"
+										alt="impacto social" title="impacto social">
+								</div>
 							</div>
 						</div>
 						<span class="about__tooltip">Veja algumas fotos</span>
@@ -126,12 +132,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="section__ods">
+<section class="section__ods">
 		<div class="overflow">
 			<div class="container">
 				<span class="ods__title">Ods que atendemos<img src="./svg/arrow_line_left.svg"
 						alt="Ods que atendemo"></span>
-				<div class="swiper-container ods__slide">
+				<div class="swiper ods__slide">
 					<div class="swiper-wrapper">
 						<div class="ods__card swiper-slide" style="background: #df4856;">
 							<div class="ods__card__front">
@@ -276,7 +282,7 @@
 							<p>Famílias acompanhadas anualmente</p>
 						</div>
 						<div class="projeto__card">
-							<span class="projeto__number">+ de 10.000 </span>
+							<span class="projeto__number">+ de 20.000 </span>
 							<p>pessoas impactadas em 34 anos</p>
 						</div>
 					</div>
@@ -304,7 +310,7 @@
 				Depoimentos
 			</div>
 			<div class="testimonial">
-				<div class="swiper-container testimonial__slide">
+				<div class="swiper testimonial__slide">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="testimonial__content">
@@ -361,7 +367,7 @@
 			<div class="partners__title">
 				Parceiros
 			</div>
-			<div class="swiper-container partners__slide">
+			<div class="swiper partners__slide">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="partners">
@@ -473,7 +479,6 @@
 		</div>
 	</footer>
 	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 	<script type="module" src="./js/app.js"></script>
 </body>
