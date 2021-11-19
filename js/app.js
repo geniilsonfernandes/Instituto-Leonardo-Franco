@@ -1,5 +1,6 @@
 import MenuMobile from "./modules/menuMobile.js";
 import ReadMore from "./modules/ReadMore.js";
+
 import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 const mobileMenu = new MenuMobile("mobileMenu", "collapseMenu", "menu__open");
 mobileMenu.init();
@@ -57,6 +58,7 @@ const testimonialSlide = new Swiper(".testimonial__slide", {
 const partnersSlide = new Swiper(".partners__slide", {
   slidesPerView: 2,
   spaceBetween: 16,
+  loop: true,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
@@ -81,4 +83,3 @@ const aboutSlide = new Swiper(".about__slide", {
     clickable: true,
   },
 });
-

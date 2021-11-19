@@ -1,4 +1,3 @@
-
 .about__section {
     background: var(--color-green);
     padding: 56px 0;
@@ -80,7 +79,6 @@
     padding: 16px 0;
 }
 
-
 .history__photo {
     position: relative;
 }
@@ -109,7 +107,7 @@
         border-top: 1px solid rgba(255, 255, 255, 0.418);
         border-bottom: 1px solid rgba(255, 255, 255, 0.418);
     }
-    .about__history__photo{
+    .about__history__photo {
         flex-direction: column;
     }
 }
@@ -127,7 +125,8 @@
     padding: 72px 0;
 }
 .equipe__grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     gap: 32px;
     padding: 24px 0;
 }
@@ -140,6 +139,7 @@
 .photo__membro {
     width: 100%;
     height: 348px;
+    background: var(--color-background-light);
 }
 .photo__membro img {
     width: 100%;
@@ -167,13 +167,36 @@
     margin-top: 8px;
 }
 
-@media screen and (max-width: 768px) {
+.new__menber {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 0 0 4px 4px;
+}
+.new__menber h1 {
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-green);
+}
+@media screen and (max-width: 1024px){
     .equipe__grid {
-       flex-direction: column;
-       align-items: center;
+        grid-template-columns: repeat(9, 1fr);
     }
 }
-
+@media screen and (max-width: 768px) {
+    .equipe__grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media screen and (max-width: 468px) {
+    .equipe__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 .contact {
     padding-top: 48px;
 }
