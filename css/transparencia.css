@@ -42,6 +42,7 @@
 
 .s__transparencia {
     background-color: #fbf7ee;
+    padding-bottom: 48px;
 }
 
 .head {
@@ -50,8 +51,8 @@
 .head h1 {
     font-family: Ubuntu;
     font-weight: 300;
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 40px;
     color: #faaa4c;
 }
 @media screen and (max-width: 768px) {
@@ -68,7 +69,7 @@
 }
 
 .card__link {
-    padding: 24px 32px;
+    padding: 16px 32px;
     background-color: #ffffff;
     display: inline-flex;
     align-items: center;
@@ -83,22 +84,23 @@
 
 .card__link .icon {
     margin-right: 16px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .card__link h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: #2f5349;
     max-width: 200px;
     display: inline-flex;
 }
 .link__button {
-    height: 50px;
+    height: 40px;
     padding: 0 20px;
     border: 1px solid #faaa4c;
     background-color: transparent;
-
+    border-radius: 4px;
     font-family: Ubuntu;
     font-size: 16px;
     color: #faaa4c;
@@ -137,14 +139,56 @@
 .date__head {
     padding: 16px 0;
     border-bottom: 1px solid #2f5349;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: background ease-in-out 200ms;
+    cursor: pointer;
+}
+.date__head:hover {
+    background: #2f534928;
+    border-radius: 4px;
 }
 .date__head h1 {
     font-size: 18px;
     color: #2f5349;
 }
+.expand_button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all ease-in-out 200ms;
+}
+.expand_button:hover {
+    border: 1px solid #2f5349;
+}
 .anual__grid {
     padding: 32px 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 16px;
+
+    animation: expandeGrid forwards ease-in-out 200ms;
+}
+
+.anual__grid.open {
+    display: flex;
+    transform: translate(30px, 0, 0);
+    animation: expandeGrid forwards ease-in-out 200ms;
+}
+.expand_button.open{
+    transform: rotate(90deg);
+}
+@keyframes expandeGrid {
+    from {
+        transform: translate3d(0, -40px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }

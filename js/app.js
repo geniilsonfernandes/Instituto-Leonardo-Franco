@@ -17,9 +17,6 @@ button.addEventListener("click", () => {
   window.scroll(0, 0);
 });
 
-
-
-
 const partnersSlide = new Swiper(".partners__slide", {
   slidesPerView: 2,
   spaceBetween: 16,
@@ -47,4 +44,15 @@ const aboutSlide = new Swiper(".about__slide", {
     el: ".about__slide__pagination",
     clickable: true,
   },
+});
+
+//
+
+const transparencyButtonExpand = document.getElementById("expand_button");
+const transparencyExpandArea = document.getElementById("expand_area");
+const transparencyExpandIcon = document.getElementById("expand_icon");
+
+transparencyButtonExpand.addEventListener("click", () => {
+  transparencyExpandArea.classList.toggle("open");
+  transparencyExpandIcon.classList.toggle("open");
 });
