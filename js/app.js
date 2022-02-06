@@ -18,23 +18,7 @@ button.addEventListener("click", () => {
 });
 
 
-const testimonialSlide = new Swiper(".testimonial__slide", {
-  slidesPerView: 1,
-  spaceBetween: 16,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".control__right",
-    prevEl: ".control__left",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+
 
 const partnersSlide = new Swiper(".partners__slide", {
   slidesPerView: 2,
