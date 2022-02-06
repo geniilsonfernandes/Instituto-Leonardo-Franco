@@ -1,7 +1,7 @@
 .cover__interna__donate {
     height: 428px;
     width: 100%;
-    
+
     position: relative;
 }
 .cover__interna__donate img {
@@ -97,12 +97,17 @@
     max-width: 650px;
 }
 
-.options__date {
-    margin-top: 48px;
+.options__donate {
+    max-width: 1030px;
+    margin: 48px auto;
     display: flex;
     justify-content: center;
     gap: 138px;
     position: relative;
+    background: #fff;
+    border: 1px solid #28b097;
+    padding: 48px 0;
+    border-radius: 16px;
 }
 .option__list {
     font-family: Poppins;
@@ -119,14 +124,14 @@
 .options__a ul li {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 500;
     font-size: 16px;
-    color: #75756e;
     margin-bottom: 8px;
+    font-weight: 700;
+    color: #28b097;
 }
 .options__a ul li span {
-    font-weight: 700;
-    color: #646462;
+    font-weight: 500;
+    color: #75756e;
 }
 
 @media screen and (max-width: 768px) {
