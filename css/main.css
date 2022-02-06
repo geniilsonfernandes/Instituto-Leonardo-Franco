@@ -232,6 +232,7 @@ font-family: 'Ubuntu', sans-serif; */
 
     border-radius: 4px;
     cursor: pointer;
+    z-index: 999;
 }
 
 /* menu responsive */
@@ -250,6 +251,7 @@ font-family: 'Ubuntu', sans-serif; */
     }
     .menu__collapse.menu__open {
         height: 343px;
+        z-index: 999;
     }
     .wrapper__menu {
         flex-direction: column;

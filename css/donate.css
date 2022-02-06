@@ -135,7 +135,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .options__date {
+    .options__donate {
         flex-direction: column;
         gap: 28px;
     }
